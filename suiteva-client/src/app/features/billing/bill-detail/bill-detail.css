@@ -100,7 +100,7 @@ mat-chip {
 /* Actions */
 mat-card-actions {
     padding: 1.5rem 2rem;
-    background-color: #f5f7fa;
+    background-color: rgba(15, 76, 117, 0.08);
     display: flex;
     justify-content: flex-end;
     gap: 1rem;

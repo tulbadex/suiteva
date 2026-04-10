@@ -88,11 +88,13 @@ mat-table {
 }
 
 mat-header-cell {
-    color: #546e7a;
+    color: #0F4C75;
     font-weight: 700;
     font-size: 0.85rem;
     text-transform: uppercase;
-    border-bottom: 1px solid #cfd8dc;
+    border-bottom: 2px solid #0F4C75;
+    background-color: rgba(15, 76, 117, 0.08);
+    letter-spacing: 0.5px;
 }
 
 mat-cell {
