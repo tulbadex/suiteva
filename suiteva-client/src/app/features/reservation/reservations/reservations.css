@@ -13,7 +13,7 @@ mat-card {
 }
 
 mat-card-header {
-  background: linear-gradient(135deg, #009688 0%, #4db6ac 100%);
+  background: linear-gradient(135deg, #0F4C75 0%, #1B6FA8 100%);
   color: white;
   padding: 1.5rem 1.5rem 1rem;
   margin-bottom: 0;
@@ -87,7 +87,7 @@ mat-card-content {
 
 .status-booked {
   background-color: #e3f2fd !important;
-  color: #1565c0 !important;
+  color: #0A3A5C !important;
   border: 1px solid #bbdefb !important;
 }
 

@@ -131,6 +131,21 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-lg) !important;
 }
 
+/* Table Headers - Brand Consistent */
+.mat-mdc-header-row,
+mat-header-row {
+  background-color: var(--primary-soft) !important;
+}
+
+.mat-mdc-header-cell,
+mat-header-cell {
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
