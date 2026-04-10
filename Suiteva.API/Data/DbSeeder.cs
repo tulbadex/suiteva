@@ -24,12 +24,12 @@ public static class DbSeeder
 
         // users
         var users = new List<User>();
-        if (await userManager.FindByEmailAsync("admin@hotel.com") == null)
+        if (await userManager.FindByEmailAsync("admin@suiteva.com") == null)
         {
             var admin = new User
             {
-                UserName = "admin@hotel.com",
-                Email = "admin@hotel.com",
+                UserName = "admin@suiteva.com",
+                Email = "admin@suiteva.com",
                 FirstName = "System",
                 LastName = "Admin",
                 PhoneNumber = "+1234567890",
