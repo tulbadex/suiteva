@@ -1,0 +1,6 @@
+@Suiteva.API_HostAddress = http://localhost:5157
+
+GET {{Suiteva.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
