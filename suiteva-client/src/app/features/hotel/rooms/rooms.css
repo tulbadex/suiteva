@@ -107,7 +107,7 @@ mat-row {
 }
 
 mat-row:hover {
-  background-color: rgba(26, 35, 126, 0.02) !important;
+  background-color: rgba(15, 76, 117, 0.02) !important;
 }
 
 .mat-column-actions {

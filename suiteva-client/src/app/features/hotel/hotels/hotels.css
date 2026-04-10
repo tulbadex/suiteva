@@ -70,7 +70,7 @@ mat-card-header {
 .card-header-image {
   height: 180px;
   /* Taller image */
-  background: linear-gradient(135deg, #1a237e, #3949ab) !important;
+  background: linear-gradient(135deg, #0F4C75, #1B6FA8) !important;
   /* var(--primary-color) gradient */
   display: flex;
   align-items: center;
@@ -174,7 +174,7 @@ mat-card-actions {
 }
 
 .card-header-image.highlight {
-  background: linear-gradient(135deg, #ff6f00, #ff8f00) !important;
+  background: linear-gradient(135deg, #E8A838, #F0C060) !important;
   /* Secondary Gradient */
 }
 

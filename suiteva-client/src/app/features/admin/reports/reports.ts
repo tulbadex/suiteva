@@ -209,8 +209,8 @@ export class Reports implements OnInit, OnDestroy {
       datasets: [{
         label: 'Revenue',
         data: revenueByMonth,
-        borderColor: '#4e73df',
-        backgroundColor: 'rgba(78, 115, 223, 0.1)',
+        borderColor: '#0F4C75',
+        backgroundColor: 'rgba(15, 76, 117, 0.1)',
         fill: true,
         tension: 0.4
       }]
@@ -224,7 +224,7 @@ export class Reports implements OnInit, OnDestroy {
           reservations.filter((r: any) => r.status === 3 || r.status === ReservationStatus.CheckedIn).length,
           reservations.filter((r: any) => r.status === 5 || r.status === ReservationStatus.Cancelled).length
         ],
-        backgroundColor: ['#4e73df', '#1cc88a', '#e74a3b']
+        backgroundColor: ['#0F4C75', '#E8A838', '#C88E20']
       }]
     };
 

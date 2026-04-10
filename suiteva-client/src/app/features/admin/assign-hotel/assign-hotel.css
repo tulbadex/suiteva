@@ -71,7 +71,7 @@ button[mat-raised-button] {
   border-radius: 8px;
   background: var(--primary-color);
   color: white;
-  box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+  box-shadow: 0 4px 15px rgba(15, 76, 117, 0.3);
 }
 
 button[mat-raised-button]:hover {

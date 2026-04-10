@@ -63,19 +63,19 @@
 
 .login-btn:hover {
     color: var(--primary-color);
-    background: rgba(26, 35, 126, 0.05);
+    background: rgba(15, 76, 117, 0.05);
 }
 
 .register-btn {
-    background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+    background: linear-gradient(135deg, #0F4C75 0%, #1B6FA8 100%);
     color: white;
-    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.2);
+    box-shadow: 0 4px 15px rgba(15, 76, 117, 0.2);
 }
 
 .register-btn:hover {
-    background: linear-gradient(135deg, #000051 0%, #1a237e 100%);
+    background: linear-gradient(135deg, #0A3A5C 0%, #0F4C75 100%);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(26, 35, 126, 0.3);
+    box-shadow: 0 6px 20px rgba(15, 76, 117, 0.3);
 }
 
 /* Hero Section */
@@ -133,24 +133,24 @@
 .cta-btn.primary {
     background: var(--primary-color);
     color: white;
-    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.3);
+    box-shadow: 0 4px 15px rgba(15, 76, 117, 0.3);
 }
 
 .cta-btn.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.4);
+    box-shadow: 0 8px 25px rgba(15, 76, 117, 0.4);
     background: var(--primary-dark);
 }
 
 .cta-btn.secondary {
     background: white;
     color: var(--primary-color);
-    border: 2px solid rgba(26, 35, 126, 0.1);
+    border: 2px solid rgba(15, 76, 117, 0.1);
 }
 
 .cta-btn.secondary:hover {
     border-color: var(--primary-color);
-    background: rgba(26, 35, 126, 0.05);
+    background: rgba(15, 76, 117, 0.05);
 }
 
 /* Visuals */

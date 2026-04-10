@@ -69,7 +69,7 @@
 
 .room-card.selected {
   border: 2px solid var(--primary-color);
-  background-color: rgba(26, 35, 126, 0.02);
+  background-color: rgba(15, 76, 117, 0.02);
 }
 
 .room-header {
