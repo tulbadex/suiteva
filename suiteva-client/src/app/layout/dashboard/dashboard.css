@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 /* Toolbar */
@@ -13,13 +14,14 @@
   background: var(--primary-color) !important;
   color: white !important;
   box-shadow: 0 2px 8px rgba(15, 76, 117, 0.3);
+  flex-shrink: 0;
 }
 
 .dashboard-toolbar span {
   font-weight: 600;
   color: white;
   letter-spacing: -0.3px;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .dashboard-toolbar mat-icon {
@@ -38,19 +40,27 @@
   flex: 1 1 auto;
 }
 
+/* Sidenav Container - MUST fill remaining height */
 .sidenav-container {
   flex: 1;
+  overflow: hidden;
+}
+
+/* Force mat-sidenav-container to fill */
+::ng-deep .mat-drawer-container {
+  height: 100% !important;
 }
 
 /* Sidebar */
 .sidenav {
-  width: 260px;
+  width: 250px;
   background: #ffffff;
   border-right: 1px solid rgba(0, 0, 0, 0.06);
+  overflow-y: auto;
 }
 
 .sidenav mat-nav-list {
-  padding: 1rem 0.75rem;
+  padding: 0.75rem;
 }
 
 .sidenav mat-nav-list h3[mat-subheader] {
@@ -59,9 +69,9 @@
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 1.25rem;
-  margin-bottom: 0.4rem;
-  padding-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  padding-left: 0.75rem;
 }
 
 /* Nav Items */
@@ -70,9 +80,9 @@
   margin: 2px 0;
   border-radius: var(--radius-sm);
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   transition: all 0.2s ease;
-  height: 44px;
+  height: 42px;
 }
 
 .sidenav a[mat-list-item]:hover {
@@ -101,11 +111,42 @@
   color: var(--primary-color) !important;
 }
 
-/* Main Content */
+/* ===== MAIN CONTENT - THE KEY FIX ===== */
 .main-content {
-  padding: 1.5rem 2rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+  background-color: var(--bg-color);
+}
+
+/* Inner content wrapper via router-outlet */
+::ng-deep .main-content > * {
+  display: block;
   width: 100%;
+  max-width: 100%;
+  padding: 1.5rem 2rem;
   box-sizing: border-box;
+}
+
+/* Ensure child components fill the space */
+::ng-deep .main-content .container,
+::ng-deep .main-content .page-container,
+::ng-deep .main-content mat-card {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Tables should use full width */
+::ng-deep .main-content table,
+::ng-deep .main-content .mat-mdc-table {
+  width: 100% !important;
+}
+
+/* Cards grid should spread */
+::ng-deep .main-content .card-grid,
+::ng-deep .main-content .mat-grid-list {
+  width: 100%;
 }
 
 /* Notifications */
@@ -186,13 +227,19 @@
   background-color: var(--secondary-color);
 }
 
-/* Responsive */
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  ::ng-deep .main-content > * {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
 @media (max-width: 960px) {
   .sidenav {
     width: 220px;
   }
 
-  .main-content {
+  ::ng-deep .main-content > * {
     padding: 1rem;
   }
 }
@@ -202,21 +249,34 @@
     width: 200px;
   }
 
-  .main-content {
+  ::ng-deep .main-content > * {
     padding: 0.75rem;
   }
 
   .dashboard-toolbar span {
-    font-size: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .dashboard-toolbar img {
+    max-height: 26px !important;
   }
 }
 
 @media (max-width: 600px) {
-  .main-content {
+  ::ng-deep .main-content > * {
     padding: 0.5rem;
   }
 
   .notification-menu {
-    max-width: 300px !important;
+    max-width: 280px !important;
+  }
+
+  .sidenav {
+    width: 180px;
+  }
+
+  .sidenav a[mat-list-item] {
+    font-size: 0.8rem;
+    height: 38px;
   }
 }
