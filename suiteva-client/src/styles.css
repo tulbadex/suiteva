@@ -146,6 +146,47 @@ mat-header-cell {
   letter-spacing: 0.5px;
 }
 
+/* Material Color Overrides - Brand */
+.mat-primary,
+.mat-mdc-raised-button.mat-primary,
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-icon-button.mat-primary {
+  --mdc-filled-button-container-color: #0F4C75 !important;
+  --mdc-icon-button-icon-color: #0F4C75 !important;
+  color: #0F4C75 !important;
+}
+
+.mat-accent,
+.mat-mdc-raised-button.mat-accent,
+.mat-mdc-unelevated-button.mat-accent {
+  --mdc-filled-button-container-color: #E8A838 !important;
+  --mdc-filled-button-label-text-color: #1A1A2E !important;
+  background-color: #E8A838 !important;
+  color: #1A1A2E !important;
+}
+
+.mat-mdc-raised-button.mat-accent:hover {
+  background-color: #C88E20 !important;
+}
+
+.mat-warn,
+.mat-mdc-icon-button.mat-warn {
+  --mdc-icon-button-icon-color: #d32f2f !important;
+  color: #d32f2f !important;
+}
+
+/* Chips */
+.mat-mdc-chip.mat-primary {
+  --mdc-chip-elevated-container-color: #0F4C75 !important;
+  --mdc-chip-label-text-color: white !important;
+}
+
+/* FAB / Mini FAB */
+.mat-mdc-fab.mat-primary,
+.mat-mdc-mini-fab.mat-primary {
+  --mdc-fab-container-color: #0F4C75 !important;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .container {
