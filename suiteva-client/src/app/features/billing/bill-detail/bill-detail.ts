@@ -136,7 +136,7 @@ export class BillDetailComponent implements OnInit {
     // Header
     doc.setFontSize(24);
     doc.setTextColor(40, 40, 40);
-    doc.text('Ibrahim Hotels', margin, y);
+    doc.text('Suiteva', margin, y);
     y += 10;
 
     // Sub-header (Specific Hotel Name)
